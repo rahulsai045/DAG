@@ -19,7 +19,7 @@ public class DirectedAcyclicGraph {
         edges.add(new Edge(vertices.get(3), vertices.get(4)));
 
         // Create graph and add edges
-        Graph graph = new Graph();
+        Graph graph = new Graph(vertices.size());
         for (Edge edge : edges) {
             graph.addEdge(edge.from, edge.to);
         }
