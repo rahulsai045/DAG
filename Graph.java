@@ -9,6 +9,7 @@ public class Graph {
 	private Map<Vertex, List<Vertex>> adjList = new HashMap<>();
     private Map<Vertex, Integer> longestPathCache = new HashMap<>();
 	public Graph(int size) {
+		adjList = new HashMap<>(size);
     }
 
     public void addEdge(Vertex from, Vertex to) {
