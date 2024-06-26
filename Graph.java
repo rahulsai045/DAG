@@ -8,6 +8,8 @@ import java.util.Map;
 public class Graph {
 	private Map<Vertex, List<Vertex>> adjList = new HashMap<>();
     private Map<Vertex, Integer> longestPathCache = new HashMap<>();
+	public Graph(int size) {
+    }
 
     public void addEdge(Vertex from, Vertex to) {
         adjList.computeIfAbsent(from, k -> new ArrayList<>()).add(to);
