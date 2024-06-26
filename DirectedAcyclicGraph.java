@@ -13,10 +13,10 @@ public class DirectedAcyclicGraph {
         // Create edges
         List<Edge> edges = new ArrayList<>();
         edges.add(new Edge(vertices.get(0), vertices.get(1)));
-        edges.add(new Edge(vertices.get(0), vertices.get(2)));
         edges.add(new Edge(vertices.get(1), vertices.get(3)));
-        edges.add(new Edge(vertices.get(2), vertices.get(3)));
         edges.add(new Edge(vertices.get(3), vertices.get(4)));
+        edges.add(new Edge(vertices.get(0), vertices.get(2)));
+        edges.add(new Edge(vertices.get(2), vertices.get(3)));
 
     
         Graph graph = new Graph(vertices.size());
