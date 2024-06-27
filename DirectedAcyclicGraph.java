@@ -29,7 +29,7 @@ public class DirectedAcyclicGraph {
         int longestPathLength = graph.findLongestPath(startVertex);
 
         // Print the result
-        System.out.println("Longest path length from vertex 0: " + longestPathLength); // Expected output: 4
+        System.out.println("Longest path length from vertex 0 is :" + longestPathLength); // Expected output: 4
     }
     
 }
